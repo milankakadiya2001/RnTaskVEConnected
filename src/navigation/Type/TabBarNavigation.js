@@ -34,7 +34,11 @@ export default function TabBarNavigation() {
 
   const TabText = memo(({icon, label, focused}) => (
     <View style={localStyle.tabViewContainer}>
-      <Image source={icon} style={localStyle.tabIconStyle} />
+      <Image
+        source={icon}
+        style={localStyle.tabIconStyle}
+        tintColor={focused ? colors.primary : colors.gray1}
+      />
       <CText
         style={styles.mt5}
         numberOfLines={1}
@@ -113,9 +117,12 @@ export default function TabBarNavigation() {
 const localStyle = StyleSheet.create({
   tabBarStyle: {
     height: isAndroid ? getHeight(65) : getHeight(80),
-    ...styles.ph20,
-    borderTopWidth: 0,
-    backgroundColor: colors.backgroundColor1,
+    ...styles.ph10,
+    backgroundColor: colors.white,
+    borderTopLeftRadius: moderateScale(12),
+    borderTopRightRadius: moderateScale(12),
+    borderColor: colors.gray1,
+    borderWidth: moderateScale(1),
   },
   tabViewContainer: {
     ...styles.center,

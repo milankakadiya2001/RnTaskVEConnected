@@ -5,8 +5,8 @@ const {width: viewportWidth, height: viewportHeight} = Dimensions.get('window');
 export const deviceWidth = viewportWidth;
 export const deviceHeight = viewportHeight;
 
-let sampleHeight = 808;
-let sampleWidth = 266;
+let sampleHeight = 844;
+let sampleWidth = 390;
 
 const scale = viewportWidth / 375;
 
