@@ -18,6 +18,8 @@ const CText = ({type, style, align, color, children, ...props}) => {
         return Typography.fontWeights.Bold;
       case 'R':
         return Typography.fontWeights.Regular;
+      case 'E':
+        return Typography.fontWeights.ExtraBold;
       default:
         return Typography.fontWeights.Regular;
     }
@@ -70,7 +72,7 @@ const CText = ({type, style, align, color, children, ...props}) => {
     <Text
       style={[
         type && {...fontWeights(), ...fontSize()},
-        {color: color ? color : colors.black},
+        {color: color ? color : colors.textColor1},
         align && {textAlign: align},
         style,
       ]}

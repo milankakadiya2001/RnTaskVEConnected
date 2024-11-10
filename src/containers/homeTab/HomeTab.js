@@ -1,12 +1,6 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import CSafeAreaView from '../../components/common/CSafeAreaView';
 
 export default function HomeTab() {
-  return (
-    <View>
-      <Text>HomeTab</Text>
-    </View>
-  );
+  return <CSafeAreaView></CSafeAreaView>;
 }
-
-const styles = StyleSheet.create({});

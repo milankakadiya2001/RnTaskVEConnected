@@ -14,6 +14,9 @@ const fontWeights = {
   Bold: {
     fontFamily: 'Manrope-Bold',
   },
+  ExtraBold: {
+    fontFamily: 'Manrope-ExtraBold',
+  },
 };
 
 // App font sizes:
